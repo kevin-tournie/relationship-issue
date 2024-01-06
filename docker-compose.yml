@@ -1,0 +1,13 @@
+version: "3.1"
+
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_USER: lucid
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: lucid
+    ports:
+      - 3306:3306
